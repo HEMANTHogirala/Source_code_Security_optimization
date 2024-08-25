@@ -1,0 +1,7 @@
+[33mUnsafe Lines of Code with Vulnerability Types:[0m
+[31meval(userInput); - Code Injection
+[34mRecommendation: Avoid using `eval` to execute code. Use alternatives like `Function` constructor or safer code execution methods.[0m
+[31mdocument.getElementById('output').innerHTML = userInput; - Cross-Site Scripting (XSS)
+[34mRecommendation: Sanitize and escape user input before inserting it into the DOM.[0m
+[31mdocument.write(userInput); - Cross-Site Scripting (XSS)
+[34mRecommendation: Avoid using `document.write` as it can overwrite the entire document. Use DOM manipulation methods instead.[0m

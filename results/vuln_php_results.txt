@@ -1,0 +1,9 @@
+[33mUnsafe Lines of Code with Vulnerability Types:[0m
+[31m$file = fopen('test.txt', 'w'); - File Handling
+[34mRecommendation: Ensure proper validation of file paths to avoid directory traversal vulnerabilities.[0m
+[31m$content = file_get_contents('http: - File Handling
+[34mRecommendation: Sanitize input when dealing with file paths to prevent file inclusion vulnerabilities.[0m
+[31m$result = system('ls -la'); - Command Injection
+[34mRecommendation: Avoid `system` for running system commands. Prefer using safe functions and validate inputs.[0m
+[31m$data = unserialize($_POST['data']); - Deserialization Vulnerability
+[34mRecommendation: Avoid using `unserialize` with untrusted data. Use safer serialization methods or proper validation.[0m

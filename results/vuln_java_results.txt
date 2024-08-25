@@ -1,0 +1,13 @@
+[33mUnsafe Lines of Code with Vulnerability Types:[0m
+[31mimport java.util.Random; - Insecure Randomness
+[34mRecommendation: Avoid using `Random` for cryptographic purposes. Use `SecureRandom` for secure random number generation.[0m
+[31mFile file = new File("test.txt"); - File Creation
+[34mRecommendation: Validate and sanitize file paths before creating files to avoid security risks.[0m
+[31mConnection conn = DriverManager.getConnection("jdbc:mysql: - SQL Injection
+[34mRecommendation: Use prepared statements instead of `DriverManager.getConnection` to prevent SQL injection.[0m
+[31mCipher cipher = Cipher.getInstance("DES"); - Insecure Encryption
+[34mRecommendation: Avoid using DES for encryption. Use more secure algorithms like AES.[0m
+[31mRandom rand = new Random(); - Insecure Randomness
+[34mRecommendation: Avoid using `Random` for cryptographic purposes. Use `SecureRandom` for secure random number generation.[0m
+[31mSystem.out.println("Hello World"); - Information Disclosure
+[34mRecommendation: Avoid using `System.out.println` for sensitive information. Use secure logging practices.[0m
